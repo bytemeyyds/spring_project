@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    创建学校对象-->
+
+
+    <bean id="school" class="org.hgq.pojo2.School">
+        <!--        简单类型注入值-->
+        <property name="address" value="北京"></property>
+        <property name="name" value="清华大学"></property>
+    </bean>
+
+    <!--    学生对象创建-->
+    <bean id="stu" class="org.hgq.pojo2.Student" >
+        <property name="name" value="李四"></property>
+        <property name="age" value="33"></property>
+<!--        <property name="school" ref="school"></property>-->
+    </bean>
+
+</beans>
